@@ -45,7 +45,7 @@ function HeroSection() {
             </div>
             <div className="surface-3d p-4">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-indigo-600">Domain</p>
-              <p className="mt-2 text-sm font-semibold text-slate-800">Agri Intelligence</p>
+              <p className="mt-2 text-sm font-semibold text-slate-800">AI & Intelligent Systems</p>
             </div>
           </div>
         </motion.div>
