@@ -11,7 +11,8 @@ const contacts = [
 
 function ContactSection() {
   return (
-    <section id="contact" className="bg-slate-50/70 py-20 lg:py-24">
+    <section id="contact" className="relative bg-slate-50/70 py-20 lg:py-24">
+      <div className="absolute right-10 top-16 -z-0 h-48 w-48 rounded-full bg-slate-200/50 blur-3xl" />
       <div className="mx-auto w-full max-w-6xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Contact"
@@ -35,7 +36,7 @@ function ContactSection() {
                 href={item.href}
                 target={isExternal ? '_blank' : '_self'}
                 rel={isExternal ? 'noopener noreferrer' : undefined}
-                className="flex items-center justify-center gap-3 rounded-3xl border border-slate-200 bg-white px-6 py-5 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
+                className="surface-3d flex items-center justify-center gap-3 px-6 py-5 text-sm font-semibold text-slate-700"
               >
                 <Icon size={18} />
                 {item.displayText ?? item.label}

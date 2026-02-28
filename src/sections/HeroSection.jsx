@@ -3,7 +3,9 @@ import { motion } from 'framer-motion'
 function HeroSection() {
   return (
     <section id="home" className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-100 via-white to-white" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-100/90 via-white to-white" />
+      <div className="absolute -left-20 top-24 -z-10 h-56 w-56 rounded-full bg-slate-200/60 blur-3xl" />
+      <div className="absolute -right-20 bottom-20 -z-10 h-64 w-64 rounded-full bg-slate-200/50 blur-3xl" />
       <div className="mx-auto grid min-h-screen w-full max-w-6xl items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -22,7 +24,7 @@ function HeroSection() {
           <div className="mt-9 flex flex-wrap gap-3">
             <a
               href="#"
-              className="rounded-2xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-slate-800"
+              className="rounded-2xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-300/30"
             >
               View Resume
             </a>
@@ -33,6 +35,17 @@ function HeroSection() {
               Contact
             </a>
           </div>
+
+          <div className="mt-10 grid max-w-lg grid-cols-2 gap-3 sm:gap-4">
+            <div className="surface-3d p-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Focus</p>
+              <p className="mt-2 text-sm font-semibold text-slate-800">Edge AI + Robotics</p>
+            </div>
+            <div className="surface-3d p-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Domain</p>
+              <p className="mt-2 text-sm font-semibold text-slate-800">Agri Intelligence</p>
+            </div>
+          </div>
         </motion.div>
 
         <motion.div
@@ -40,14 +53,14 @@ function HeroSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="mx-auto w-full max-w-sm"
+          className="group mx-auto w-full max-w-sm"
         >
-          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-100 to-slate-200 p-6 shadow-xl shadow-slate-300/30">
+          <div className="surface-3d relative aspect-[4/5] overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 p-6">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.85),transparent_55%)]" />
             <img
               src="/images/profile.jpg"
               alt="Shrish Patil"
-              className="h-full w-full rounded-2xl border border-slate-300/80 object-cover"
+              className="h-full w-full rounded-2xl border border-slate-300/80 object-cover transition-transform duration-500 group-hover:scale-[1.04]"
             />
           </div>
         </motion.div>

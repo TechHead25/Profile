@@ -15,7 +15,7 @@ function AboutSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/50 sm:p-10"
+        className="surface-3d p-8 sm:p-10"
       >
         <p className="text-base leading-relaxed text-slate-700 sm:text-lg">
           I am an AI and robotics developer passionate about turning research into deployable systems. My work spans computer vision,

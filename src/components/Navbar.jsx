@@ -22,12 +22,12 @@ function Navbar() {
     <header
       className={`sticky top-0 z-50 border-b transition-all duration-300 ${
         isScrolled
-          ? 'border-slate-200/80 bg-white/75 shadow-sm backdrop-blur-xl'
-          : 'border-transparent bg-white/30 backdrop-blur-md'
+          ? 'border-slate-200/80 bg-white/80 shadow-lg shadow-slate-200/40 backdrop-blur-2xl'
+          : 'border-transparent bg-white/45 backdrop-blur-xl'
       }`}
     >
       <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#home" className="text-base font-semibold tracking-tight text-slate-900">
+        <a href="#home" className="text-base font-semibold tracking-tight text-slate-900 transition-transform duration-300 hover:-translate-y-0.5">
           Shrish Patil
         </a>
 
@@ -36,7 +36,7 @@ function Navbar() {
             <li key={link.label}>
               <a
                 href={link.href}
-                className="rounded-lg px-2 py-1 transition-colors duration-200 hover:text-slate-900"
+                className="rounded-xl px-3 py-1.5 transition-all duration-200 hover:bg-white/80 hover:text-slate-900"
               >
                 {link.label}
               </a>

@@ -48,7 +48,8 @@ const projects = [
 
 function ProjectsSection() {
   return (
-    <section id="projects" className="bg-slate-50/70 py-20 lg:py-24">
+    <section id="projects" className="relative bg-slate-50/70 py-20 lg:py-24">
+      <div className="absolute left-12 top-10 -z-0 h-52 w-52 rounded-full bg-slate-200/50 blur-3xl" />
       <div className="mx-auto w-full max-w-6xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Projects"
@@ -64,7 +65,7 @@ function ProjectsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.08 }}
-              className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              className="surface-3d p-7"
             >
               <h3 className="text-xl font-semibold tracking-tight text-slate-900">{project.title}</h3>
               <p className="mt-4 text-sm leading-relaxed text-slate-600">{project.description}</p>

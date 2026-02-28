@@ -28,7 +28,7 @@ function UpdatesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.06 }}
-            className="relative mb-10 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm last:mb-0"
+            className="surface-3d relative mb-10 p-6 last:mb-0"
           >
             <span className="absolute -left-[2.15rem] top-8 h-3 w-3 rounded-full border border-slate-300 bg-white" />
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{formatDate(update.date)}</p>
