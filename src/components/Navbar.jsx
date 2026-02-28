@@ -27,7 +27,7 @@ function Navbar() {
       }`}
     >
       <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#home" className="text-base font-semibold tracking-tight text-slate-900 transition-transform duration-300 hover:-translate-y-0.5">
+        <a href="#home" className="text-base font-semibold tracking-tight text-indigo-700 transition-transform duration-300 hover:-translate-y-0.5 hover:text-violet-700">
           Shrish Patil
         </a>
 
@@ -36,7 +36,7 @@ function Navbar() {
             <li key={link.label}>
               <a
                 href={link.href}
-                className="rounded-xl px-3 py-1.5 transition-all duration-200 hover:bg-white/80 hover:text-slate-900"
+                className="rounded-xl px-3 py-1.5 transition-all duration-200 hover:bg-indigo-50 hover:text-indigo-700"
               >
                 {link.label}
               </a>

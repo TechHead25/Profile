@@ -20,7 +20,7 @@ function UpdatesSection() {
         description="A running timeline of work, collaborations, and technical progress."
       />
 
-      <div className="relative ml-2 border-l border-slate-200 pl-8 sm:ml-4">
+      <div className="relative ml-2 border-l border-indigo-200 pl-8 sm:ml-4">
         {sortedUpdates.map((update, index) => (
           <motion.article
             key={`${update.title}-${update.date}`}
@@ -30,8 +30,8 @@ function UpdatesSection() {
             transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.06 }}
             className="surface-3d relative mb-10 p-6 last:mb-0"
           >
-            <span className="absolute -left-[2.15rem] top-8 h-3 w-3 rounded-full border border-slate-300 bg-white" />
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{formatDate(update.date)}</p>
+            <span className="absolute -left-[2.15rem] top-8 h-3 w-3 rounded-full border border-indigo-300 bg-indigo-100" />
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-600">{formatDate(update.date)}</p>
             <h3 className="mt-3 text-lg font-semibold tracking-tight text-slate-900">{update.title}</h3>
             {update.description ? <p className="mt-3 text-sm leading-relaxed text-slate-600">{update.description}</p> : null}
           </motion.article>

@@ -49,7 +49,7 @@ const projects = [
 function ProjectsSection() {
   return (
     <section id="projects" className="relative bg-slate-50/70 py-20 lg:py-24">
-      <div className="absolute left-12 top-10 -z-0 h-52 w-52 rounded-full bg-slate-200/50 blur-3xl" />
+      <div className="absolute left-12 top-10 -z-0 h-52 w-52 rounded-full bg-violet-200/45 blur-3xl" />
       <div className="mx-auto w-full max-w-6xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Projects"
@@ -71,7 +71,7 @@ function ProjectsSection() {
               <p className="mt-4 text-sm leading-relaxed text-slate-600">{project.description}</p>
               <div className="mt-6 flex flex-wrap gap-2">
                 {project.stack.map((item) => (
-                  <span key={item} className="rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
+                  <span key={item} className="rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700">
                     {item}
                   </span>
                 ))}

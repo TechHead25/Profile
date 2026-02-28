@@ -8,9 +8,9 @@ import UpdatesSection from './sections/UpdatesSection'
 function App() {
   return (
     <div className="relative overflow-x-clip bg-white text-slate-800">
-      <div className="soft-glow -left-24 top-16 h-64 w-64" />
-      <div className="soft-glow right-0 top-[38rem] h-72 w-72" />
-      <div className="soft-glow left-1/3 top-[85rem] h-72 w-72" />
+      <div className="soft-glow -left-24 top-16 h-64 w-64 bg-indigo-200/55" />
+      <div className="soft-glow right-0 top-[38rem] h-72 w-72 bg-sky-200/50" />
+      <div className="soft-glow left-1/3 top-[85rem] h-72 w-72 bg-violet-200/45" />
       <Navbar />
       <main className="relative z-10">
         <HeroSection />
